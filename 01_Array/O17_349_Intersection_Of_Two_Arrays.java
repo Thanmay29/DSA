@@ -15,32 +15,7 @@ public class O17_349_Intersection_Of_Two_Arrays {
         System.out.println("Output: " + Arrays.toString(intersect(nums1, nums2)));
         // Output: [2, 2]
     }
-
-    //Best Solution array frequency
-
-    public int[] intersect(int[] nums1, int[] nums2) {
-        int[] arr = new int[1001];
-
-        for(int n : nums1){
-            arr[n]++;
-        }
-
-        int k = 0;
-        for(int n : nums2){
-            if(arr[n] > 0){
-                nums2[k++] = n;
-                arr[n]--;
-            }
-        }
-
-        int[] res = new int[k];
-        for(int i=0; i<k; i++){
-            res[i] = nums2[i];
-        }
-
-        return res;
-    }
-
+    
     //Intersection_Of_Two_Arrays 1
     public static int[] intersect_Unique_Element(int[] nums1, int[] nums2){
         Set<Integer> set1 = new HashSet<>();
