@@ -14,7 +14,6 @@ public class O47_152_Maximum_Product_Subarray {
         System.out.println(maxProduct(nums1));
     }
 
-    class Solution {
     public int maxProduct(int[] nums) {
         int n = nums.length;
         int prefix = 1, suffix = 1;
@@ -36,7 +35,7 @@ public class O47_152_Maximum_Product_Subarray {
         }
         return max;
     }
-}
+
     public static int maxProduct(int[] nums) {
         int maxProd = nums[0];
         int minProd = nums[0];
