@@ -4,6 +4,33 @@ import java.util.Stack;
 
 public class O07_GFG_Sum_Of_SubArray_Maximum {
 
+    //Single pass 
+    class Solution {
+    public int sumOfMax(int[] arr) {
+        // code here
+        int n = arr.length;
+        long sum = 0L;
+        int mod = 1_000_000_007;
+        Stack<Integer> st = new Stack<>();
+        
+        for(int i=0; i<=n; i++){
+            while(!st.isEmpty() && (i==n || arr[i]>arr[st.peek()])){
+                int mid = st.pop();
+                int left = st.isEmpty() ? mid+1 : mid-st.peek();
+                int right = i-mid;
+                
+                sum += (long)arr[mid] * left * right;
+            }
+            if(i<n) st.push(i);
+        }
+        
+        sum = sum % mod;
+        return (int)sum;
+    }
+}
+
+    //two pass
+
     public static int sumSubarrayMaxs(int[] arr) {
         int mod = 1_000_000_007;
         int n = arr.length;
