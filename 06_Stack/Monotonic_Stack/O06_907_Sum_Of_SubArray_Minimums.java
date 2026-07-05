@@ -4,6 +4,31 @@ import java.util.Stack;
 
 public class O06_907_Sum_Of_SubArray_Minimums {
 
+    //Single pass
+
+    public int sumSubarrayMins(int[] nums) {
+        int n = nums.length;
+        int mod = 1_000_000_007;
+        long sum = 0L;
+        Stack<Integer> st = new Stack<>();
+
+        for(int i=0; i<=n; i++){
+            while(!st.isEmpty() && (i==n || nums[i] <= nums[st.peek()])){
+                int mid = st.pop();
+                int left = st.isEmpty() ? mid+1 : mid-st.peek();
+                int right = i-mid;
+
+                sum+=(long)nums[mid] * left * right;
+            }
+            if(i<n) st.push(i);
+        }
+        
+        long res = sum%mod;
+        return (int)res;
+    }
+
+    //two pass
+
     public int sumSubarrayMins(int[] arr) {
         int mod = 1_000_000_007;
         int n = arr.length;
