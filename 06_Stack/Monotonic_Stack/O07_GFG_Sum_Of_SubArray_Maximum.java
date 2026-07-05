@@ -23,9 +23,12 @@ public class O07_GFG_Sum_Of_SubArray_Maximum {
             }
             if(i<n) st.push(i);
         }
-        
-        sum = sum % mod;
+        // no % mod — GFG wants the raw sum
         return (int)sum;
+
+        //if leetcode of large sum value or explicitly mentions mod us this
+        //sum = sum % mod;
+        //return (int)sum;
     }
 }
 
