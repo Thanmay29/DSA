@@ -5,7 +5,7 @@ Public class O03_Celebrity_Problem {
     public int celebrity(int[][] M) {
 
         /*
-         * Celebrity Problem
+         * Celebrity Problem(candidate elimination problem)
          *
          * M[i][j] = 1  -> Person i knows Person j
          * M[i][j] = 0  -> Person i does NOT know Person j
