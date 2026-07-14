@@ -1,0 +1,24 @@
+class O21_Reverse_DLL_InPlace {
+    public ListNode reverseDLL(ListNode head) {
+
+        if (head == null || head.next == null)
+            return head;
+
+        ListNode curr = head;
+        ListNode temp = null;
+
+        while (curr != null) {
+
+            // Swap prev and next
+            temp = curr.prev;
+            curr.prev = curr.next;
+            curr.next = temp;
+
+            // Move to the original next node
+            curr = curr.prev;
+        }
+
+        // temp points to the previous node of the new head
+        return temp.prev;
+    }
+}
