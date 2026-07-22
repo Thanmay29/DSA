@@ -1,6 +1,6 @@
 package Stack.Implimentation_Problems_Important;
 
-Public class O03_Celebrity_Problem {
+public class O03_Celebrity_Problem {
 
     public int celebrity(int[][] M) {
 

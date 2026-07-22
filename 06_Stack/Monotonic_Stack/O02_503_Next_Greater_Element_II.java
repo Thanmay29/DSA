@@ -2,7 +2,7 @@ package Stack.Monotonic_Stack;
 
 import java.util.Stack;
 
-public class O02_502_Next_Greater_Element_II {
+public class O02_503_Next_Greater_Element_II {
 
     // Method to find the next greater elements in a circular array
     public int[] nextGreaterElements(int[] nums) {
@@ -33,7 +33,7 @@ public class O02_502_Next_Greater_Element_II {
     }
 
     public static void main(String[] args) {
-        O02_502_Next_Greater_Element_II obj = new O02_502_Next_Greater_Element_II();
+        O02_503_Next_Greater_Element_II obj = new O02_503_Next_Greater_Element_II();
         int[] nums = {1, 2, 1};
         int[] result = obj.nextGreaterElements(nums);
 

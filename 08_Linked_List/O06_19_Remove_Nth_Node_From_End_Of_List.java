@@ -1,6 +1,6 @@
 package Linked_List;
 
-public class o06_19_Remove_Nth_Node_From_End_Of_List {
+public class O06_19_Remove_Nth_Node_From_End_Of_List {
 
     static class ListNode {
         int val;

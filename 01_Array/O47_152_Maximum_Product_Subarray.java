@@ -14,7 +14,7 @@ public class O47_152_Maximum_Product_Subarray {
         System.out.println(maxProduct(nums1));
     }
 
-    public int maxProduct(int[] nums) {
+    public static int maxProduct(int[] nums) {
         int n = nums.length;
         int prefix = 1, suffix = 1;
         int max = Integer.MIN_VALUE;
@@ -36,23 +36,23 @@ public class O47_152_Maximum_Product_Subarray {
         return max;
     }
 
-    public static int maxProduct(int[] nums) {
-        int maxProd = nums[0];
-        int minProd = nums[0];
-        int result = nums[0];
-
-        for (int i = 1; i < nums.length; i++) {
-            int curr = nums[i];
-
-            // Store previous max because min uses it
-            int prevMax = maxProd;
-
-            maxProd = Math.max(curr, Math.max(curr * maxProd, curr * minProd));
-            minProd = Math.min(curr, Math.min(curr * prevMax, curr * minProd));
-
-            result = Math.max(result, maxProd);
-        }
-
-        return result;
-    }
+//    public static int maxProduct(int[] nums) {
+//        int maxProd = nums[0];
+//        int minProd = nums[0];
+//        int result = nums[0];
+//
+//        for (int i = 1; i < nums.length; i++) {
+//            int curr = nums[i];
+//
+//            // Store previous max because min uses it
+//            int prevMax = maxProd;
+//
+//            maxProd = Math.max(curr, Math.max(curr * maxProd, curr * minProd));
+//            minProd = Math.min(curr, Math.min(curr * prevMax, curr * minProd));
+//
+//            result = Math.max(result, maxProd);
+//        }
+//
+//        return result;
+//    }
 }

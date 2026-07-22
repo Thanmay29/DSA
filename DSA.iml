@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/01_Array" isTestSource="false" packagePrefix="Array" />
+      <sourceFolder url="file://$MODULE_DIR$/02_Strings" isTestSource="false" packagePrefix="Strings" />
+      <sourceFolder url="file://$MODULE_DIR$/03_Oops" isTestSource="false" packagePrefix="Oops" />
+      <sourceFolder url="file://$MODULE_DIR$/04_Recursion" isTestSource="false" packagePrefix="Recursion" />
+      <sourceFolder url="file://$MODULE_DIR$/05_Sorting_techniques" isTestSource="false" packagePrefix="Sorting_techniques" />
+      <sourceFolder url="file://$MODULE_DIR$/06_Stack" isTestSource="false" packagePrefix="Stack" />
+      <sourceFolder url="file://$MODULE_DIR$/07_PriorityQueue_Heap" isTestSource="false" packagePrefix="PriorityQueue_Heap" />
+      <sourceFolder url="file://$MODULE_DIR$/08_Linked_List" isTestSource="false" packagePrefix="Linked_List" />
+      <sourceFolder url="file://$MODULE_DIR$/09_Prefix_Sum_Suffix_Kadane" isTestSource="false" packagePrefix="Prefix_Sum_Suffix_Kadane" />
+      <sourceFolder url="file://$MODULE_DIR$/10_Sliding_Window" isTestSource="false" packagePrefix="Sliding_Window" />
+      <sourceFolder url="file://$MODULE_DIR$/11_HashMap_Set" isTestSource="false" packagePrefix="HashMap_Set" />
+      <sourceFolder url="file://$MODULE_DIR$/12_Binary_Search" isTestSource="false" packagePrefix="Binary_Search" />
+      <sourceFolder url="file://$MODULE_DIR$/13_DP" isTestSource="false" packagePrefix="DP" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
