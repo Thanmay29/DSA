@@ -23,8 +23,6 @@ public class O12_540_Single_Element_in_a_Sorted_Array {
             }
         }
         return nums[left];
-
-
     }
 
     public static void main(String[] args) {

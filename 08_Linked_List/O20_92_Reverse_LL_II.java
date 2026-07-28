@@ -16,7 +16,7 @@ public class O20_92_Reverse_LL_II {
             ListNode temp = curr.next;
             curr.next = temp.next;
             temp.next = prev.next;
-            prev.next = temp;
+            prev.next =  temp;
         }
         return dummy.next;
     }

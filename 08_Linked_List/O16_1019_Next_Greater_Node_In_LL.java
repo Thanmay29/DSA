@@ -26,12 +26,12 @@ public class O16_1019_Next_Greater_Node_In_LL {
         Stack<Integer> st = new Stack<>(); // Stack stores indices
 
         // Step 2: Monotonic stack to find next greater element
-        for (int i = 0; i < list.size(); i++) {
-            while (!st.isEmpty() && list.get(i) > list.get(st.peek())) {
-                int idx = st.pop();
-                res[idx] = list.get(i);
+        for(int i=list.size()-1; i>=0; i--){
+            while(!st.isEmpty() && list.get(i)>st.peek()){
+                st.pop();
             }
-            st.push(i);
+            res[i] = st.isEmpty() ? 0 : st.peek();
+            st.push(list.get(i));
         }
 
         return res;
