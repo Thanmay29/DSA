@@ -1,6 +1,6 @@
-package Binary_Search.BS_On_1D_Array;
+package Binary_Search.BS_On_Answer;
 
-public class O14_Square_root_of_a_num {
+public class O01_Square_root_of_a_num {
 
     public static int floorSqrt(int n) {
         int left = 1, right = n;
