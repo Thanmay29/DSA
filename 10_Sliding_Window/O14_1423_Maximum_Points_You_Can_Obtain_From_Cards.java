@@ -2,7 +2,7 @@ package Sliding_Window;
 
 public class O14_1423_Maximum_Points_You_Can_Obtain_From_Cards {
 
-//    You are given an array cardPoints and an integer k.
+//You are given an array cardPoints and an integer k.
 //You can pick exactly k cards.
 //The picks can only be from the front or the back of the array.
 //Goal → maximize the sum of points.
