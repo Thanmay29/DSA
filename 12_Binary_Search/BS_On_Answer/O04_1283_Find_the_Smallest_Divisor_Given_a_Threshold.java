@@ -1,6 +1,6 @@
 package Binary_Search.BS_On_Answer;
 
-public class OO4_1283_Find_the_Smallest_Divisor_Given_a_Threshold {
+public class O04_1283_Find_the_Smallest_Divisor_Given_a_Threshold {
 
     // Idea: binary search on the ANSWER (the divisor), not on the array.
     // A bigger divisor gives a smaller sum, so the feasibility check is monotonic:
@@ -48,8 +48,8 @@ public class OO4_1283_Find_the_Smallest_Divisor_Given_a_Threshold {
 
     // Quick test
     public static void main(String[] args) {
-        OO4_1283_Find_the_Smallest_Divisor_Given_a_Threshold sol =
-                new OO4_1283_Find_the_Smallest_Divisor_Given_a_Threshold();
+        O04_1283_Find_the_Smallest_Divisor_Given_a_Threshold sol =
+                new O04_1283_Find_the_Smallest_Divisor_Given_a_Threshold();
 
         System.out.println(sol.smallestDivisor(new int[]{1, 2, 5, 9}, 6));      // 5
         System.out.println(sol.smallestDivisor(new int[]{44, 22, 33, 11, 1}, 5)); // 44

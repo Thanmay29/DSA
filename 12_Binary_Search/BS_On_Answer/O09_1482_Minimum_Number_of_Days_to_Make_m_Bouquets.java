@@ -1,6 +1,6 @@
 package Binary_Search.BS_On_Answer;
 
-public class OO9_1482_Minimum_Number_of_Days_to_Make_m_Bouquets {
+public class O09_1482_Minimum_Number_of_Days_to_Make_m_Bouquets {
 
     public static int minDays(int[] bloomDay, int m, int k) {
         // Total flowers needed = m bouquets * k flowers each.

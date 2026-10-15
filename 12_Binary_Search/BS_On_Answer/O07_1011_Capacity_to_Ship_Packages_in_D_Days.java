@@ -1,6 +1,6 @@
 package Binary_Search.BS_On_Answer;
 
-public class OO7_1011_Capacity_to_Ship_Packages_in_D_Days {
+public class O07_1011_Capacity_to_Ship_Packages_in_D_Days {
 
     public static int shipWithinDays(int[] weights, int days) {
         // Search range for the ship capacity:

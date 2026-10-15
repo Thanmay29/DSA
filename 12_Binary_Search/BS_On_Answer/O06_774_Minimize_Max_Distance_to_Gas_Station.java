@@ -1,6 +1,6 @@
 package Binary_Search.BS_On_Answer;
 
-public class OO6_774_Minimize_Max_Distance_to_Gas_Station {
+public class O06_774_Minimize_Max_Distance_to_Gas_Station {
 
     public static double minMaxDist(int[] stations, int k) {
         // Smallest possible max gap is 0 (in theory); we search over real numbers, not integers

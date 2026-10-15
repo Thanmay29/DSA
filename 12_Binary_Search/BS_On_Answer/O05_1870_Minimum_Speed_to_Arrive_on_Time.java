@@ -1,6 +1,6 @@
 package Binary_Search.BS_On_Answer;
 
-public class OO5_1870_Minimum_Speed_to_Arrive_on_Time {
+public class O05_1870_Minimum_Speed_to_Arrive_on_Time {
 
     public static int minSpeedOnTime(int[] dist, double hour) {
         // The first n-1 trains each cost at least 1 full hour (we wait for the next whole hour),

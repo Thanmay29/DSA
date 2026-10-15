@@ -1,6 +1,6 @@
 package Binary_Search.BS_On_Answer;
 
-public class OO8_1231_Divide_Chocolate {
+public class O08_1231_Divide_Chocolate {
 
     public static int maximizeSweetness(int[] sweetness, int K) {
         // Search range for "the sweetness of the piece I eat":
